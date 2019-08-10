@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <body>
+
+  </body>
+
+  <script type="text/javascript">
+    var Module = {
+      onRuntimeInitialized: function() {
+
+        var int_sqrt = Module.cwrap('int_sqrt', 'number', ['number']);
+        //console.log(Module._int_sqrt(16));
+        document.querySelector("body").innerHTML += int_sqrt(25);
+      }
+    };
+  </script>
+  <script type="text/javascript" src="function.js"></script>
+
+</html>
